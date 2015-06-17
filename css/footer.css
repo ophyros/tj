@@ -136,7 +136,7 @@
 	background-color: #F59A58;
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 828px) {
 	.footer {
 		font-size: 2.2rem;
 		display: block;
