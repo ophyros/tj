@@ -91,6 +91,7 @@
 .search {
 	display: inline-block;
 	width: 20vw;
+	max-width: 200px;
 	border: none;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -309,6 +310,7 @@
 
 	.search {
 		width: 100%;
+		max-width: 100%;
 		border: none;
 	}
 	
