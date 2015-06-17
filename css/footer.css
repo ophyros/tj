@@ -1,0 +1,220 @@
+.footer {
+	font-size: 0.77rem;
+	display: table;
+	max-width: 860px;
+	margin: auto;
+	margin-top: 3.2em;
+	margin-bottom: 4.2em;
+}
+
+.logo--footer {
+	display: table-cell;
+	width: 1%;
+	white-space: nowrap;
+}
+
+.footer-links {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 98%;
+}
+
+.footer-links__list {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-links__item {
+	list-style: none;
+	display: inline-block;
+	margin-right: 2.7rem;
+}
+
+.footer-links__item:last-child {
+	margin-right: 0;
+}
+
+.footer-links__link,
+.footer-links__link:visited {
+	font-family: "Roboto", sans-serif;
+	color: #000000;
+	font-size: 0.77rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.footer-links__link:hover,
+.footer-links__link:active {
+	text-decoration: underline;
+}
+
+.social-links {
+	display: table-cell;
+	text-align: right;
+	vertical-align: middle;
+	width: 1%;
+	white-space: nowrap;
+}
+
+.social-links__list {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.social-links__item {
+	list-style: none;
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.social-links__item:first-child {
+	margin-left: 0;
+}
+
+.social-links__link,
+.social-links__link:visited {
+	font-size: 0.66rem;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	-webkit-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+	background-size: 1em 1em;
+}
+
+.social-links__link--twitter {
+	background: #00b7ec url("../i/icon-twitter.svg") no-repeat center center;
+	background-size: 1em 1em;
+}
+
+.social-links__link--twitter:hover,
+.social-links__link--twitter:active {
+	background-color: #33C5F0;
+}
+
+.social-links__link--facebook {
+	background: #304591 url("../i/icon-facebook.svg") no-repeat center center;
+	background-size: 1em 1em;
+}
+
+.social-links__link--facebook:hover,
+.social-links__link--facebook:active {
+	background-color: #6876AC;
+}
+
+.social-links__link--vk {
+	background: #527397 url("../i/icon-vk.svg") no-repeat center center;
+	background-size: 1em 1em;
+}
+
+.social-links__link--vk:hover,
+.social-links__link--vk:active {
+	background-color: #758BA5;
+}
+
+.social-links__link--google {
+	background: #d94435 url("../i/icon-google.svg") no-repeat center center;
+	background-size: 1em 1em;
+}
+
+.social-links__link--google:hover,
+.social-links__link--google:active {
+	background-color: #DD5749;
+}
+
+.social-links__link--ok {
+	background: #f2812e url("../i/icon-ok.svg") no-repeat center center;
+	background-size: 1em 1em;
+}
+
+.social-links__link--ok:hover,
+.social-links__link--ok:active {
+	background-color: #F59A58;
+}
+
+@media all and (max-width: 640px) {
+	.footer {
+		font-size: 2.2rem;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #333333;
+		position: relative;
+		height: 460px;
+	}
+
+	.logo--footer {
+		display: none;
+	}
+
+	.footer-links {
+		display: block;
+		text-align: left;
+		vertical-align: middle;
+		width: 100%;
+		position: absolute;
+		top: 3.1em;
+	}
+
+	.footer-links__item {
+		list-style: none;
+		display: block;
+		margin: 0;
+		margin-left: 1.6rem;
+	}
+
+	.footer-links__link,
+	.footer-links__link:visited {
+		display: block;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 2.2rem;
+		padding-top: 1.125em;
+		padding-bottom: 0.4em;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		-webkit-transition: background-color 0.25s;
+		transition: background-color 0.25s;
+	}
+
+	.footer-links__link:hover,
+	.footer-links__link:active {
+		text-decoration: none;
+		background-color: #5c5c5c;
+	}
+	
+	.social-links {
+		display: block;
+		text-align: right;
+		vertical-align: middle;
+		width: 100%;
+		white-space: nowrap;
+	}
+
+	.social-links__list {
+		font-size: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-links__item {
+		list-style: none;
+		display: inline-block;
+		margin-left: 0px;
+		width: 20%;
+	}
+
+	.social-links__link,
+	.social-links__link:visited {
+		font-size: 2.55rem;
+		display: inline-block;
+		width: 100%;
+		height: 2.7em;
+		border-radius: 0;
+		background-size: 1em 1em;
+		box-shadow: inset 0px 10px 0px 0px rgba(0, 0, 0, 0.18);
+	}
+
+}

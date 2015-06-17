@@ -1,0 +1,350 @@
+.article {
+	background-color: #ffffff;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.article__header {
+	background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url("../i/article-header-photo.jpg") no-repeat center center;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+.article__header__wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 14%;
+	max-width: 50%;
+	min-width: 440px;
+}
+
+.article__title {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	font-size: 2.66rem;
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.article__subtitle {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	font-size: 0.77rem;
+	font-weight: 300;
+	text-align: left;
+	margin-top: 1em;
+}
+
+.article__author::before {
+	display: inline;
+	margin: 0 0.5em;
+	content: "·";
+}
+
+.article__comments-counter {
+	display: inline-block;
+	margin-left: 1.1em;
+	padding-left: 1.75em;
+	background: url("../i/icon-comments.svg") no-repeat left center;
+	background-size: 1.25em 1.25em;
+}
+
+.article__views-counter {
+	display: inline-block;
+	margin-left: 1.1em;
+	padding-left: 1.75em;
+	background: url("../i/icon-eye.svg") no-repeat left center;
+	background-size: 1.25em 1.25em;
+}
+
+.subtitle__text {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.44;
+	text-align: left;
+	margin-top: 0.7em;
+}
+
+.article__shares {
+	margin-top: 2rem;
+	font-size: 0;
+}
+
+.share-button {
+	display: inline-block;
+	padding-left: 2.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.4em;
+	padding-right: 0.7em;
+	background-color: #425497;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	font-size: 0.77rem;
+	font-weight: 500;
+	text-align: left;
+	transition: background-color 0.25s;
+}
+
+.share-button__shares-count {
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: 400;
+	margin-left: 0.7em;
+}
+
+.share-button--twitter {
+	background: #00b7ec url("../i/icon-twitter.svg") no-repeat left 11px top 8px;
+	background-size: 1.2em 1.2em;
+}
+
+.share-button--twitter:hover,
+.share-button--twitter:active {
+	background-color: #33C5F0;
+}
+
+.share-button--facebook {
+	background: #425497 url("../i/icon-facebook.svg") no-repeat left 11px top 8px;
+	background-size: 1.2em 1.2em;
+}
+
+.share-button--facebook:hover,
+.share-button--facebook:active {
+	background-color: #6876AC;
+}
+
+.share-button--vk {
+	background: #526e8f url("../i/icon-vk.svg") no-repeat left 11px top 8px;
+	background-size: 1.2em 1.2em;
+}
+
+.share-button--vk:hover,
+.share-button--vk:active {
+	background-color: #758BA5;
+}
+
+.article__body {
+	font-family: "Roboto", sans-serif;
+	color: #000000;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-left: 14%;
+	padding-right: 20%;
+	padding-top: 2.2em;
+	padding-bottom: 2em;
+}
+
+.article__text {
+	line-height: 1.4;
+	text-align: left;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+.quote {
+	padding-left: 70px;
+	position: relative;
+	margin-top: 1.6em;
+	margin-bottom: 2.2em;
+	font-family: "Georgia", serif;
+	color: #000000;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.quote__avatar {
+	position: absolute;
+	top: 2px;
+	left: -5px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.quote__avatar-image {
+	width: 60px;
+	height: 60px;
+}
+
+.quote__author__name {
+	font-family: "Roboto", sans-serif;
+	color: #000000;
+	font-size: 1.55rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.quote__author__occupation {
+	font-family: "Roboto", sans-serif;
+	color: #000000;
+	font-size: 1.33rem;
+	font-weight: 400;
+	margin: 0;
+	margin-top: 0.125em;
+}
+
+.quote__text {
+	letter-spacing: -0.18px;
+	line-height: 1.44;
+	text-align: left;
+	margin: 0;
+	margin-top: 0.44em;
+}
+
+@media all and (max-width: 640px) {
+	.article {
+		margin-top: 100px;
+	}
+	
+	.article__header {
+		height: 780px;
+	}
+	
+	.article__header__wrapper {
+		left: 4%;
+		max-width: 90%;
+		min-width: 0;
+	}
+	
+	.article__title {
+		font-size: 3.3rem;
+		line-height: 1;
+	}
+	
+	.article__subtitle {
+		font-size: 1.3rem;
+		margin-top: 1.25em;
+	}
+	
+	.subtitle__text {
+		font-size: 1.55rem;
+		line-height: 1.4;
+		margin-top: 1em;
+	}
+	
+	.article__comments-counter,
+	.article__views-counter {
+		margin-left: 0.4em;
+		padding-left: 1.8em;
+		background-size: 1.33em 1.33em;
+	}
+
+	.article__shares {
+		display: block;
+		cursor: pointer;
+		width: 90px;
+		height: 90px;
+		position: fixed;
+		z-index: 100;
+		right: 8%;
+		bottom: 5%;
+		margin: 0;
+		border-radius: 50%;
+		background: #ff0066 url("../i/icon-share.svg") no-repeat left 22px center;
+		background-size: 40px 46px;
+		box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.22);
+	}
+	
+	.share-button {
+		width: 90px;
+		height: 0;
+		border-radius: 50%;
+		background-size: 50px 50px;
+		background-position: center center;
+		box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.22);
+		padding: 0;
+		position: absolute;
+		transition: top 0.3s ease-out;
+		display: block;
+		top: 0;
+	}
+	
+	.share-button__text {
+		display: none;
+	}
+	
+	.share-button__shares-count {
+		display: none;
+	}
+	
+	.article__shares.article__shares--opened .share-button--twitter {
+		top: -390px;
+	}
+	
+	.article__shares.article__shares--opened .share-button--facebook {
+		top: -260px;
+	}
+	
+	.article__shares.article__shares--opened .share-button--vk {
+		top: -130px;
+	}
+	
+	.article__shares.article__shares--opened .share-button {
+		height: 90px;
+	}
+	
+	.article__body {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 1em;
+		padding-bottom: 1.1em;
+	}
+	
+	.article__text {
+		padding-left: 4%;
+		padding-right: 5%;
+		font-size: 1.55rem;
+		line-height: 1.1;
+		margin-bottom: 1.1em;
+	}
+	
+	.quote {
+		background-color: #f6f6f6;
+		padding-left: 4%;
+		padding-top: 1.75em;
+		padding-bottom: 1.75em;
+		position: static;
+		margin-top: 1.6em;
+		margin-bottom: 1.4em;
+	}
+
+	.quote__avatar {
+		position: static;
+		display: block;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin: auto;
+		margin-bottom: 1.25em;
+	}
+	
+	.quote__avatar-image {
+		width: 150px;
+		height: 150px;
+	}
+
+	.quote__author__name {
+		font-size: 2.22rem;
+		text-align: center;
+	}
+	
+	.quote__author__occupation {
+		font-size: 1.55rem;
+		text-align: center;
+	}
+	
+	.quote__text {
+		font-size: 1.66rem;
+		letter-spacing: -0.3px;
+		line-height: 1.33;
+		margin-top: 1.5em;
+	}
+}
